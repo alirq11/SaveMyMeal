@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Projet : SaveMyMeal
+Fichier : activity_signup.xml
+Description : Formulaire de création d'un compte client
+Responsables :
+- Abdelali Raqioui
+- Salah Eddine Toubi
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Créer un compte"
+            android:textColor="#2E7D32"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/editSignupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="Nom complet"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editSignupEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Adresse e-mail"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editSignupPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mot de passe (6 caractères minimum)"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/editSignupConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirmer le mot de passe"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnCreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Créer mon compte" />
+
+        <Button
+            android:id="@+id/btnSignupBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retour à la connexion" />
+
+    </LinearLayout>
+</ScrollView>
